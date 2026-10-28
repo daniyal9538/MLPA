@@ -1,0 +1,16 @@
+# Core: the mlpa package itself needs only PyTorch.
+torch>=2.0
+
+# Tutorial notebook and examples (tested with the versions noted).
+torchvision        # 0.29.1, MNIST in notebooks/tutorial_mnist.ipynb
+numpy              # 2.5.2
+scikit-learn       # 1.9.1, linear probe
+matplotlib         # 3.11.2
+jupyter            # 1.1.1
+ipykernel          # 7.4.0
+
+# Tests
+pytest             # 9.2.0
+
+# For a GPU build of torch/torchvision, install them first from the matching index, e.g.
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu129

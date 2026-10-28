@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlpa"
+version = "0.1.0"
+description = "MLPA: missing-modality-aware latent prediction over frozen uni-modal encoders (multimodal bottleneck transformer)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0"]
+
+[project.optional-dependencies]
+tutorial = ["torchvision", "numpy", "scikit-learn", "matplotlib", "jupyter"]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["mlpa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
